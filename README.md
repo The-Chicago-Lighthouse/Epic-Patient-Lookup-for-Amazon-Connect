@@ -179,7 +179,7 @@ Authorization: Bearer {{access_token}}
 ## Contacts
 **Organization:** The Chicago Lighthouse  
 **Technical Lead:** Esmeil Naqeeb, Network Security Engineer  
-**Email:** it-apps@chicagolighthouse.org  
+**Email:** esmeil.naqeeb@chicagolighthouse.org  
 
 ---
 
