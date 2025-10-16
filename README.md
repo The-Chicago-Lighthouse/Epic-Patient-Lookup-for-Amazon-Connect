@@ -113,7 +113,7 @@ flowchart LR
 
 ---
 
-## ⚙️ Try It in Postman
+## Try It in Postman
 
 ### (1️) Get a Token
 **Request**
