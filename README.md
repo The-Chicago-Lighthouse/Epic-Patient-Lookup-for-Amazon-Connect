@@ -14,11 +14,11 @@ This integration was developed by **The Chicago Lighthouse** to streamline patie
 ---
 
 ## Key Features
-- 🔍 **FHIR-based patient search:** Uses `Patient.Search (Demographics)` and `$match`.
-- ☁️ **Amazon Connect integration:** Lookup triggered automatically when a call arrives.
-- 🧠 **Epic Hyperdrive support:** Allows EHR launch using SMART-on-FHIR `iss` and `launch` parameters.
-- 🔐 **OAuth 2.0 Authorization:** Supports both **Authorization Code** and **Client Credentials** flows.
-- ⚙️ **AWS-native implementation:** Lambda + API Gateway architecture with no persistent storage.
+- **FHIR-based patient search:** Uses `Patient.Search (Demographics)` and `$match`.
+- **Amazon Connect integration:** Lookup triggered automatically when a call arrives.
+- **Epic Hyperdrive support:** Allows EHR launch using SMART-on-FHIR `iss` and `launch` parameters.
+- **OAuth 2.0 Authorization:** Supports both **Authorization Code** and **Client Credentials** flows.
+- **AWS-native implementation:** Lambda + API Gateway architecture with no persistent storage.
 
 ---
 
@@ -86,7 +86,7 @@ GET https://fhir.epic.com/interconnect-fhir-oauth/oauth2/authorize?
 
 ---
 
-## 🧭 Architecture Diagram
+## Architecture Diagram
 
 ```mermaid
 flowchart LR
@@ -115,7 +115,7 @@ flowchart LR
 
 ## ⚙️ Try It in Postman
 
-### 1️⃣ Get a Token
+### (1️) Get a Token
 **Request**
 ```
 POST https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token
@@ -139,7 +139,7 @@ scope=patient/*.read
 
 ---
 
-### 2️⃣ Patient Search by Phone Number
+### (2️) Patient Search by Phone Number
 **Request**
 ```
 GET https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Patient?telecom=+17085551212
